@@ -1,7 +1,6 @@
 /*
 1. Protoypal Inheritance
 2. Use of static function in ES5
-
 */
 
 
