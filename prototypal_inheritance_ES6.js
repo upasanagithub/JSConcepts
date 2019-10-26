@@ -6,6 +6,9 @@ class Book{
   getMsg(){
     return "The author of the book "+this.title+" is "+this.author;
   }
+  static setStaticMsg(){ //static method
+    return "This is a static message";
+  }
 }
 
 class Magazine extends Book{
@@ -26,3 +29,4 @@ const mag1 = new Magazine('Fashion', 'Vogue', 'Anaita Shroff');
 
 console.log(book1.getMsg());
 console.log(mag1.getMsg());
+console.log(Book.setStaticMsg());
