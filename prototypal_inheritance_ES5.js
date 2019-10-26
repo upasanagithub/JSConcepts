@@ -22,11 +22,10 @@ Book.staticMsg = function(){
 }
 
 function Magazine(title, author ,category){
-  this.title = title;
-  this.author = author;
+  Book.call(this, title, author); // in ES6 super is used. 
   this.category = category;
 }
-Magazine.prototype = Book.prototype;
+Magazine.prototype = Object.create(Book.prototype);
 
 const mag1 = new Magazine('Vogue','Anaita Shroff', 'Fashion');
 
